@@ -6,11 +6,9 @@ namespace Snake
 {
     public class Snake
     {
-
         public int SnakeValueX { get; set; }
         public int SnakeValueY { get; set; }
         private string movement;
-
 
         public Snake(int valueX, int valueY)
         {
@@ -20,16 +18,12 @@ namespace Snake
 
         public void Draw()
         {
-
-
             Console.SetCursorPosition(SnakeValueX, SnakeValueY);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("O");
-
         }
         public void Move(ConsoleKeyInfo userDirection)
         {
-
             if (userDirection.Key == ConsoleKey.UpArrow)
             {
                 Console.SetCursorPosition(SnakeValueX, SnakeValueY);
@@ -58,7 +52,6 @@ namespace Snake
                 movement = "RIGHT";
             }
 
-
             switch (movement)
             {
                 case "UP":
@@ -77,8 +70,6 @@ namespace Snake
                     SnakeValueX++;
                     break;
             }
-
         }
     }
-
 }
