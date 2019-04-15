@@ -7,7 +7,6 @@ using System.Threading;
 
 namespace Snake
 {
-
     class Program
     {
         static void Main(string[] args)
@@ -23,11 +22,9 @@ namespace Snake
                 realSnake.Draw();
                 apple.Draw();
 
-
                 var userInput = Console.ReadKey();
 
-
-                    realSnake.Move(userInput);
+                realSnake.Move(userInput);
 
                 gameOn = PlayGround.CollisionWall(realSnake);
 
@@ -52,8 +49,6 @@ namespace Snake
 
             }
             while (gameOn);
-
         }
-
     }
 }
