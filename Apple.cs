@@ -26,7 +26,6 @@ namespace Snake
                 return true;
             }
             return false;
-
         }
     }
 }
